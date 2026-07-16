@@ -4,7 +4,6 @@ public class PlanetData : ScriptableObject
 {
     public string planetName;
     public double baseProduction;
-    public double basePopulation;
     public double worth;
     public string planetDescription;
 }
