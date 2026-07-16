@@ -1230,7 +1230,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlanetManager
   planet: {fileID: 11400000, guid: b720c281e87790a4c843c4faf06930e4, type: 2}
   planetDescription: Its hella bright
-  baseEnergyProduction: 1
+  baseEnergyProduction: 0
   currentEnergyProduction: 0
   Energy: 0
   Population: 0

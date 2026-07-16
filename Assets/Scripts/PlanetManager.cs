@@ -22,10 +22,8 @@ public class PlanetManager : MonoBehaviour
         timer += Time.deltaTime;
         if (timer >= 1f)
         {
-            Energy = Energy + currentEnergyProduction;
-
             currentEnergyProduction = baseEnergyProduction + energyUpgradesBought;
-
+            Energy = Energy + currentEnergyProduction;
             timer -= 1f;
         }
     }
@@ -34,5 +32,6 @@ public class PlanetManager : MonoBehaviour
     {
         uiManager.OnPlanetPress(this);
         Debug.Log($"{planet.name} has been clicked!");
+        Debug.Log($"{planet.name} has {Energy} Energy.");
     }
 }
