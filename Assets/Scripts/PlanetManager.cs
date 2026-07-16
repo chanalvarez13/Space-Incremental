@@ -5,11 +5,12 @@ public class PlanetManager : MonoBehaviour
     [SerializeField] private PlanetData planet;
     private UIManager uiManager;
     public string planetDescription;
-    public double baseProduction = 1;
-    public double currentProduction;
+    public double baseEnergyProduction = 1;
+    public double currentEnergyProduction;
     public double Energy;
     public double Population;
-    public double upgradesBought;
+    public double energyUpgradesBought;
+    public double currentPopulationInflux;
     private float timer = 0f;
 
     void Start()
@@ -21,8 +22,10 @@ public class PlanetManager : MonoBehaviour
         timer += Time.deltaTime;
         if (timer >= 1f)
         {
-            Energy = Energy + planet.baseProduction;
-            currentProduction = baseProduction + upgradesBought;
+            Energy = Energy + currentEnergyProduction;
+
+            currentEnergyProduction = baseEnergyProduction + energyUpgradesBought;
+
             timer -= 1f;
         }
     }

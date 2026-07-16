@@ -10,7 +10,7 @@ public class UIManager : MonoBehaviour
     public Text planetDescription;
     public Text energy;
     public Text population;
-    public Text energyProduction;
+    public Text currentEnergyProduction;
     public Text populationIncrease;
 
     public void OnPlanetPress(PlanetManager targetPlanet)
@@ -33,6 +33,8 @@ public class UIManager : MonoBehaviour
         {
             planetName.text = planetTarget.name;
             planetDescription.text = planetTarget.planetDescription;
+            currentEnergyProduction.text = planetTarget.currentEnergyProduction.ToString() + "/s";
+            populationIncrease.text = planetTarget.currentPopulationInflux.ToString() + "/s";
             energy.text = planetTarget.Energy.ToString() + " Energy";
             population.text = planetTarget.Population.ToString() + " Population";
         }
