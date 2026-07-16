@@ -1,16 +1,10 @@
 using UnityEngine;
-
-public class PlanetData : MonoBehaviour
+[CreateAssetMenu(fileName = "New Planet", menuName = "Space Incremental/Planet")]
+public class PlanetData : ScriptableObject
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public string planetName;
+    public double baseProduction;
+    public double basePopulation;
+    public double worth;
+    public string planetDescription;
 }

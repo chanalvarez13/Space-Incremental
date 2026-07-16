@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 10de9235fdc7039439e18d53cc959a9e
+guid: ef36dd6a940ddeb499fe08cbeb12fe2b
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - icon: {instanceID: 0}
+  - Planet: {fileID: 11400000, guid: e0dc974b1552e884297c9101995632f1, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
