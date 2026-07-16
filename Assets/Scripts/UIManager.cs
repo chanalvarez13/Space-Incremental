@@ -6,6 +6,9 @@ public class UIManager : MonoBehaviour
 
     public void OnPlanetPress()
     {
-        PlanetUIMenu.SetActive(!PlanetUIMenu.activeSelf);
+        if (PlanetUIMenu != null)
+        {
+            PlanetUIMenu.SetActive(!PlanetUIMenu.activeSelf);
+        }
     }
 }
