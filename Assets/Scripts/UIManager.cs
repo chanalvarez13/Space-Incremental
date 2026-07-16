@@ -2,14 +2,10 @@ using UnityEngine;
 
 public class UIManager : MonoBehaviour
 {
-    public GameObject infoMenu;
+    public GameObject PlanetUIMenu;
 
     public void OnPlanetPress()
     {
-        infoMenu.SetActive(true);
-    }
-    public void OnBackgroundPress()
-    {
-        infoMenu.SetActive(false);
+        PlanetUIMenu.SetActive(!PlanetUIMenu.activeSelf);
     }
 }
