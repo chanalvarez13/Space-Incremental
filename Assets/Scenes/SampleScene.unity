@@ -902,7 +902,7 @@ MonoBehaviour:
   planetDescription: {fileID: 1909660193}
   energy: {fileID: 1743956168}
   population: {fileID: 1614695824}
-  energyProduction: {fileID: 367256098}
+  currentEnergyProduction: {fileID: 367256098}
   populationIncrease: {fileID: 488026836}
 --- !u!4 &509199629
 Transform:
@@ -1230,11 +1230,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlanetManager
   planet: {fileID: 11400000, guid: b720c281e87790a4c843c4faf06930e4, type: 2}
   planetDescription: Its hella bright
-  baseProduction: 1
-  currentProduction: 0
+  baseEnergyProduction: 1
+  currentEnergyProduction: 0
   Energy: 0
   Population: 0
-  upgradesBought: 0
+  energyUpgradesBought: 0
+  currentPopulationInflux: 0
 --- !u!212 &601686848
 SpriteRenderer:
   serializedVersion: 3
@@ -1436,11 +1437,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlanetManager
   planet: {fileID: 11400000, guid: e0dc974b1552e884297c9101995632f1, type: 2}
   planetDescription: Its hella green
-  baseProduction: 1
-  currentProduction: 0
+  baseEnergyProduction: 1
+  currentEnergyProduction: 0
   Energy: 0
   Population: 2
-  upgradesBought: 0
+  energyUpgradesBought: 0
+  currentPopulationInflux: 0
 --- !u!212 &609179740
 SpriteRenderer:
   serializedVersion: 3
@@ -1731,7 +1733,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &689606615
 MonoBehaviour:
   m_ObjectHideFlags: 0
