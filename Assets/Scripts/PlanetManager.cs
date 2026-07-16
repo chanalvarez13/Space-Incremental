@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlanetManager : MonoBehaviour
 {
-    [SerializeField] private PlanetData planet;
+    public PlanetData planet;
     public double baseProduction = 1;
     public double currentProduction;
     public double Energy;
