@@ -4,6 +4,7 @@ public class PlanetManager : MonoBehaviour
 {
     [SerializeField] private PlanetData planet;
     private UIManager uiManager;
+    public string planetDescription;
     public double baseProduction = 1;
     public double currentProduction;
     public double Energy;
