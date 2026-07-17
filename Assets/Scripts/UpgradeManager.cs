@@ -4,11 +4,27 @@ using UnityEngine;
 
 public class UpgradeManager : MonoBehaviour
 {
-    [SerializeField] private UpgradeData upgrade;
-    [SerializeField] private PlanetManager targetPlanet;
+    public UpgradeData upgrade;
+    private PlanetManager targetPlanet;
 
+
+    void Start()
+    {
+    }
+
+    public void Upgrade()
+    {
+        Debug.Log("Energy Increased");
+    }
     public void PlanetPressedUpgrade(PlanetManager planet)
     {
+        targetPlanet = planet;
+        if (targetPlanet != null)
+        {
+            Debug.Log($"Upgrade target: {targetPlanet.name}");
+
+            targetPlanet.currentEnergyProduction += upgrade.energyProductionIncrease;
+        }
 
     }
 }

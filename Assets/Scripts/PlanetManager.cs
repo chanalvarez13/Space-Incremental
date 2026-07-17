@@ -17,6 +17,7 @@ public class PlanetManager : MonoBehaviour
     void Start()
     {
         uiManager = FindAnyObjectByType<UIManager>();
+        upgradeManager = FindAnyObjectByType<UpgradeManager>();
     }
     void Update()
     {
@@ -32,6 +33,7 @@ public class PlanetManager : MonoBehaviour
     private void OnMouseDown()
     {
         uiManager.OnPlanetPress(this);
+        upgradeManager.PlanetPressedUpgrade(this);
         Debug.Log($"{planet.name} has been clicked!");
         Debug.Log($"{planet.name} has {Energy} Energy.");
     }

@@ -6,4 +6,6 @@ public class UpgradeData : ScriptableObject
     public string upgradeDescription;
     public double energyProductionIncrease;
     public double populationIncrease;
+    public double populationCost;
+    public double energyCost;
 }
