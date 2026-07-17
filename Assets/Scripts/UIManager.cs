@@ -35,8 +35,8 @@ public class UIManager : MonoBehaviour
             planetDescription.text = planetTarget.planetDescription;
             currentEnergyProduction.text = planetTarget.currentEnergyProduction.ToString() + "/s";
             populationIncrease.text = planetTarget.currentPopulationInflux.ToString() + "/s";
-            energy.text = planetTarget.Energy.ToString() + " Energy";
-            population.text = planetTarget.Population.ToString() + " Population";
+            energy.text = Mathf.RoundToInt(planetTarget.Energy) + " Energy";
+            population.text = Mathf.RoundToInt(planetTarget.Population) + " Population";
         }
     }
 }

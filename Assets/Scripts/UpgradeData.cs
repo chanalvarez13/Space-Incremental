@@ -4,8 +4,8 @@ public class UpgradeData : ScriptableObject
 {
     public string upgradeName;
     public string upgradeDescription;
-    public double energyProductionIncrease;
-    public double populationIncrease;
-    public double populationCost;
-    public double energyCost;
+    public float energyProductionIncrease;
+    public float populationIncrease;
+    public float populationCost;
+    public float energyCost;
 }

@@ -4,27 +4,18 @@ using UnityEngine;
 
 public class UpgradeManager : MonoBehaviour
 {
-    public UpgradeData upgrade;
     private PlanetManager targetPlanet;
-
-
-    void Start()
-    {
-    }
-
-    public void Upgrade()
-    {
-        Debug.Log("Energy Increased");
-    }
-    public void PlanetPressedUpgrade(PlanetManager planet)
+    public void SelectPlanet(PlanetManager planet)
     {
         targetPlanet = planet;
-        if (targetPlanet != null)
-        {
-            Debug.Log($"Upgrade target: {targetPlanet.name}");
-
-            targetPlanet.currentEnergyProduction += upgrade.energyProductionIncrease;
-        }
-
+        Debug.Log($"{planet.name} has been selected.");
+    }
+    public void Upgrade(UpgradeData upgrade)
+    {
+        targetPlanet.currentEnergyProduction += upgrade.energyProductionIncrease;
+        targetPlanet.currentPopulationInflux += upgrade.populationIncrease;
+        Debug.Log($"{targetPlanet.name} has been upgraded.");
+        Debug.Log($"Energy Production increased by {upgrade.energyProductionIncrease}");
+        Debug.Log($"Population Influx increased by {upgrade.populationIncrease}");
     }
 }
