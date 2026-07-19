@@ -670,6 +670,7 @@ MonoBehaviour:
   uManager: {fileID: 1894723774}
   planet: {fileID: 0}
   upgradeCost: {fileID: 1970126782}
+  upgradePrice: 30
 --- !u!114 &265503278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1731,6 +1732,7 @@ MonoBehaviour:
   uManager: {fileID: 1894723774}
   planet: {fileID: 0}
   upgradeCost: {fileID: 677162599}
+  upgradePrice: 60
 --- !u!1 &601686846
 GameObject:
   m_ObjectHideFlags: 0
