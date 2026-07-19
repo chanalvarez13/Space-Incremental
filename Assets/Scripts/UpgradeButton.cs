@@ -8,10 +8,11 @@ public class UpgradeButton : MonoBehaviour
     public UpgradeManager uManager;
     public PlanetManager planet;
     public Text upgradeCost;
-    public float upgradePrice;
+    [SerializeField] public float upgradePrice;
     public void PressUpgrade()
     {
         uManager.Upgrade(upgradeData);
+        IncreaseUpgradePrice(upgradeData);
         UpdateEnergyButtonCost(upgradeData);
     }
 
