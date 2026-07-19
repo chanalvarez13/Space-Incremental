@@ -11,9 +11,13 @@ public class UpgradeButton : MonoBehaviour
     [SerializeField] public float upgradePrice;
     public void PressUpgrade()
     {
-        uManager.Upgrade(upgradeData);
-        IncreaseUpgradePrice(upgradeData);
-        UpdateEnergyButtonCost(upgradeData);
+        int upgradeResponse = uManager.Upgrade(upgradeData,this);
+        if (upgradeResponse == 1)
+        {
+            IncreaseUpgradePrice(upgradeData);
+            UpdateEnergyButtonCost(upgradeData);
+        }
+
     }
 
     public void UpdateEnergyButtonCost(UpgradeData upgradeData)

@@ -11,10 +11,21 @@ public class UpgradeManager : MonoBehaviour
         targetPlanet = planet;
         Debug.Log($"{planet.name} has been selected.");
     }
-    public void Upgrade(UpgradeData upgrade)
+    public int Upgrade(UpgradeData upgrade, UpgradeButton upgradeButton)
     {
-        targetPlanet.currentEnergyProduction += upgrade.energyProductionIncrease;
-        targetPlanet.currentPopulationInflux += upgrade.populationIncrease;
-        Debug.Log($"{targetPlanet.name} has been upgraded.");
+        if (targetPlanet.Energy >= upgradeButton.upgradePrice)
+        {
+            targetPlanet.currentEnergyProduction += upgrade.energyProductionIncrease;
+            targetPlanet.currentPopulationInflux += upgrade.populationIncrease;
+
+            targetPlanet.Energy = targetPlanet.Energy - upgradeButton.upgradePrice;
+            Debug.Log($"{targetPlanet.name} has been upgraded.");
+            return 1;
+        }
+        else
+        {
+            Debug.Log("Failed to Upgrade: Not enough Energy.");
+            return 0;
+        }
     }
 }

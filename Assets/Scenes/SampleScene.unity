@@ -669,7 +669,7 @@ MonoBehaviour:
   uManager: {fileID: 1894723774}
   planet: {fileID: 0}
   upgradeCost: {fileID: 1970126782}
-  upgradePrice: 30
+  upgradePrice: 15
 --- !u!114 &265503278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1732,7 +1732,7 @@ MonoBehaviour:
   uManager: {fileID: 1894723774}
   planet: {fileID: 0}
   upgradeCost: {fileID: 677162599}
-  upgradePrice: 60
+  upgradePrice: 30
 --- !u!1 &601686846
 GameObject:
   m_ObjectHideFlags: 0
@@ -2322,7 +2322,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 60
+  m_Text: 30
 --- !u!222 &677162600
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2349,7 +2349,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &689606615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4017,7 +4017,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 30
+  m_Text: 15
 --- !u!222 &1970126783
 CanvasRenderer:
   m_ObjectHideFlags: 0
