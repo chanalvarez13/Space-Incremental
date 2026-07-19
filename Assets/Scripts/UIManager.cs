@@ -19,7 +19,6 @@ public class UIManager : MonoBehaviour
         planetTarget = targetPlanet;
         if (PlanetUIMenu != null)
         {
-            UpgradeButton.UpdateEnergyButtonCost(UpgradeData);
             PlanetUIMenu.SetActive(!PlanetUIMenu.activeSelf);
         }
     }

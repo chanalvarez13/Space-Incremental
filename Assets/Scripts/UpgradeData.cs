@@ -9,7 +9,7 @@ public class UpgradeData : ScriptableObject
     public float populationCost;
     public float energyCost;
     public float initialEnergyCost;
-    private void OnEnable()
+    private void Start()
     {
         energyCost = initialEnergyCost;
     }

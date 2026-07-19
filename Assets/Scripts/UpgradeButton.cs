@@ -18,4 +18,11 @@ public class UpgradeButton : MonoBehaviour
     {
         upgradeCost.text = Mathf.RoundToInt(upgradeData.energyCost).ToString();
     }
+
+    public static void IncreaseUpgradePrice(UpgradeData upgrade)
+    {
+        float upgradeCostMultiplier = 1.50f;
+        upgrade.energyCost = upgrade.energyCost * upgradeCostMultiplier;
+        Debug.Log($"The price of {upgrade.name} has been increased to {upgrade.energyCost}");
+    }
 }

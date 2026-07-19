@@ -16,16 +16,6 @@ public class UpgradeManager : MonoBehaviour
         targetPlanet.currentEnergyProduction += upgrade.energyProductionIncrease;
         targetPlanet.currentPopulationInflux += upgrade.populationIncrease;
         Debug.Log($"{targetPlanet.name} has been upgraded.");
-
-        Debug.Log($"Energy Production increased by {upgrade.energyProductionIncrease}");
-        Debug.Log($"Population Influx increased by {upgrade.populationIncrease}");
-        IncreaseUpgradePrice(upgrade);
-    }
-
-    private void IncreaseUpgradePrice(UpgradeData upgrade)
-    {
-        float upgradeCostMultiplier = 1.50f;
-        upgrade.energyCost = upgrade.energyCost * upgradeCostMultiplier;
-        Debug.Log($"The price of {upgrade.name} has been increased to {upgrade.energyCost}");
+        UpgradeButton.IncreaseUpgradePrice(upgrade);
     }
 }
