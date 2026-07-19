@@ -6,6 +6,7 @@ public class UIManager : MonoBehaviour
 {
     public GameObject PlanetUIMenu;
     public PlanetManager planetTarget;
+    public UpgradeData UpgradeData;
     public Text planetName;
     public Text planetDescription;
     public Text energy;
@@ -18,6 +19,7 @@ public class UIManager : MonoBehaviour
         planetTarget = targetPlanet;
         if (PlanetUIMenu != null)
         {
+            UpgradeButton.UpdateEnergyButtonCost(UpgradeData);
             PlanetUIMenu.SetActive(!PlanetUIMenu.activeSelf);
         }
     }

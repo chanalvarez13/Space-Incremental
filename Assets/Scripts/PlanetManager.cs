@@ -34,6 +34,5 @@ public class PlanetManager : MonoBehaviour
         uiManager.OnPlanetPress(this);
         upgradeManager.SelectPlanet(this);
         Debug.Log($"{planet.name} has been clicked!");
-        Debug.Log($"{planet.name} has {Energy} Energy.");
     }
 }
