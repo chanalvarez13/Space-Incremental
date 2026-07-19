@@ -27,7 +27,7 @@ public class UpgradeButton : MonoBehaviour
 
     public void IncreaseUpgradePrice(UpgradeData upgrade)
     {
-        float upgradeCostMultiplier = 1.50f;
+        float upgradeCostMultiplier = 1.35f;
         upgradePrice = upgradePrice * upgradeCostMultiplier;
         Debug.Log($"The price of {upgrade.name} has been increased to {upgradePrice}");
     }

@@ -18,7 +18,7 @@ public class UpgradeManager : MonoBehaviour
             targetPlanet.currentEnergyProduction += upgrade.energyProductionIncrease;
             targetPlanet.currentPopulationInflux += upgrade.populationIncrease;
 
-            targetPlanet.Energy = targetPlanet.Energy - upgradeButton.upgradePrice;
+            targetPlanet.Energy -= upgradeButton.upgradePrice;
             Debug.Log($"{targetPlanet.name} has been upgraded.");
             return 1;
         }
