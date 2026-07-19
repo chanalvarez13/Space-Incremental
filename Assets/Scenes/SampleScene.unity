@@ -666,7 +666,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae3465d0719629e4fa1e021269ee4a5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeButton
-  upgradeData: {fileID: 11400000, guid: d84ee5c72597f88448b0e141785ad0e5, type: 2}
+  upgradeData: {fileID: 11400000, guid: 1646d64234902924282a10a19d56cc19, type: 2}
   uManager: {fileID: 1894723774}
   planet: {fileID: 0}
   upgradeCost: {fileID: 1970126782}
@@ -2320,7 +2320,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 60
 --- !u!222 &677162600
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4015,7 +4015,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 30
 --- !u!222 &1970126783
 CanvasRenderer:
   m_ObjectHideFlags: 0

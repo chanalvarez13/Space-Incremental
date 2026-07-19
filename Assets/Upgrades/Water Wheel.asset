@@ -17,5 +17,5 @@ MonoBehaviour:
   energyProductionIncrease: 1
   populationIncrease: 0
   populationCost: 0
-  energyCost: 30
+  energyCost: 1729.9512
   initialEnergyCost: 30

@@ -8,6 +8,7 @@ public class UpgradeButton : MonoBehaviour
     public UpgradeManager uManager;
     public PlanetManager planet;
     public Text upgradeCost;
+    public float upgradePrice;
     public void PressUpgrade()
     {
         uManager.Upgrade(upgradeData);
@@ -16,13 +17,13 @@ public class UpgradeButton : MonoBehaviour
 
     public void UpdateEnergyButtonCost(UpgradeData upgradeData)
     {
-        upgradeCost.text = Mathf.RoundToInt(upgradeData.energyCost).ToString();
+        upgradeCost.text = Mathf.RoundToInt(upgradePrice).ToString();
     }
 
-    public static void IncreaseUpgradePrice(UpgradeData upgrade)
+    public void IncreaseUpgradePrice(UpgradeData upgrade)
     {
         float upgradeCostMultiplier = 1.50f;
-        upgrade.energyCost = upgrade.energyCost * upgradeCostMultiplier;
-        Debug.Log($"The price of {upgrade.name} has been increased to {upgrade.energyCost}");
+        upgradePrice = upgradePrice * upgradeCostMultiplier;
+        Debug.Log($"The price of {upgrade.name} has been increased to {upgradePrice}");
     }
 }
