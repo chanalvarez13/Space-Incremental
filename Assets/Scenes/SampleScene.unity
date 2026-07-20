@@ -735,6 +735,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlanetManager
   planet: {fileID: 11400000, guid: 15b66b2488e89c1469d905250198d3e7, type: 2}
+  upgrades: []
   planetDescription: damn thas far
   baseEnergyProduction: 0
   currentEnergyProduction: 0
@@ -1973,6 +1974,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlanetManager
   planet: {fileID: 11400000, guid: b720c281e87790a4c843c4faf06930e4, type: 2}
+  upgrades: []
   planetDescription: Its hella bright
   baseEnergyProduction: 0
   currentEnergyProduction: 0
@@ -2180,6 +2182,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlanetManager
   planet: {fileID: 11400000, guid: e0dc974b1552e884297c9101995632f1, type: 2}
+  upgrades:
+  - {fileID: 0}
+  - {fileID: 0}
   planetDescription: Its hella green
   baseEnergyProduction: 1
   currentEnergyProduction: 0

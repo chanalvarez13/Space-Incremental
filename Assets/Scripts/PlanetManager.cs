@@ -1,3 +1,5 @@
+using NUnit.Framework;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PlanetManager : MonoBehaviour
@@ -5,6 +7,7 @@ public class PlanetManager : MonoBehaviour
     [SerializeField] private PlanetData planet;
     private UIManager uiManager;
     private UpgradeManager upgradeManager;
+    public List<PlanetUpgrade> upgrades;
     public string planetDescription;
     public float baseEnergyProduction = 1;
     public float currentEnergyProduction;
