@@ -1,7 +1,8 @@
 using UnityEngine;
-
-public class PlanetUpgrade : MonoBehaviour
+[System.Serializable]
+public class PlanetUpgrade
 {
     public UpgradeData upgradeData;
-    public float upgradeCost;
+    public int upgradeLevel;
+    public float currentCost;
 }

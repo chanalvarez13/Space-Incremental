@@ -7,7 +7,8 @@ public class PlanetManager : MonoBehaviour
     [SerializeField] private PlanetData planet;
     private UIManager uiManager;
     private UpgradeManager upgradeManager;
-    public List<PlanetUpgrade> upgrades;
+    [SerializeField] private List<PlanetUpgrade> upgradeTemplate;
+    public List<PlanetUpgrade> upgrades = new List<PlanetUpgrade>();
     public string planetDescription;
     public float baseEnergyProduction = 1;
     public float currentEnergyProduction;
@@ -20,6 +21,8 @@ public class PlanetManager : MonoBehaviour
     {
         uiManager = FindAnyObjectByType<UIManager>();
         upgradeManager = FindAnyObjectByType<UpgradeManager>();
+
+        upgrades = CreateUpgrades(upgradeTemplate);
         AddProduction();
     }
     public void AddProduction()
@@ -28,7 +31,7 @@ public class PlanetManager : MonoBehaviour
     }
     void Update()
     {
-            Energy += currentEnergyProduction * Time.deltaTime;
+        Energy += currentEnergyProduction * Time.deltaTime;
         Population += currentPopulationInflux * Time.deltaTime;
     }
 
@@ -36,6 +39,23 @@ public class PlanetManager : MonoBehaviour
     {
         uiManager.OnPlanetPress(this);
         upgradeManager.SelectPlanet(this);
+        uiManager.ShowPlanetUpgrades(this);
         Debug.Log($"{planet.name} has been clicked!");
+    }
+
+    private List<PlanetUpgrade> CreateUpgrades(List<PlanetUpgrade> template)
+    {
+        List<PlanetUpgrade> newList = new List<PlanetUpgrade>();
+
+        foreach (PlanetUpgrade upgrade in template)
+        {
+            newList.Add(new PlanetUpgrade
+            {
+                upgradeData = upgrade.upgradeData,
+                upgradeLevel = 0,
+                currentCost = upgrade.upgradeData.baseCost,
+            });
+        }
+        return newList;
     }
 }

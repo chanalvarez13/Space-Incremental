@@ -6,7 +6,7 @@ public class UIManager : MonoBehaviour
 {
     public GameObject PlanetUIMenu;
     public PlanetManager planetTarget;
-    public UpgradeData UpgradeData;
+    [SerializeField] public UpgradeButton[] upgradeButtons;
     public Text planetName;
     public Text planetDescription;
     public Text energy;
@@ -19,7 +19,16 @@ public class UIManager : MonoBehaviour
         planetTarget = targetPlanet;
         if (PlanetUIMenu != null)
         {
+            ShowPlanetUpgrades(targetPlanet);
             PlanetUIMenu.SetActive(!PlanetUIMenu.activeSelf);
+        }
+    }
+
+    public void ShowPlanetUpgrades(PlanetManager planet)
+    {
+        for (int i = 0; i < planet.upgrades.Count; i++)
+        {
+            upgradeButtons[i].SetUpgrade(planet.upgrades[i]);
         }
     }
 

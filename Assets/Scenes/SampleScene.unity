@@ -543,7 +543,7 @@ GameObject:
   - component: {fileID: 246901637}
   - component: {fileID: 246901636}
   m_Layer: 5
-  m_Name: Water Wheel
+  m_Name: Name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -601,7 +601,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Water Wheel
+  m_Text: name
 --- !u!222 &246901637
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -735,6 +735,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlanetManager
   planet: {fileID: 11400000, guid: 15b66b2488e89c1469d905250198d3e7, type: 2}
+  upgradeTemplate:
+  - upgradeData: {fileID: 11400000, guid: 7c9f49a2e390b054dad7bbc57ca2cb0e, type: 2}
+    upgradeLevel: 0
+    currentCost: 100
+  - upgradeData: {fileID: 11400000, guid: 3170199559b6acf47955f622ec32058e, type: 2}
+    upgradeLevel: 0
+    currentCost: 200
   upgrades: []
   planetDescription: damn thas far
   baseEnergyProduction: 0
@@ -832,7 +839,7 @@ GameObject:
   - component: {fileID: 265503278}
   - component: {fileID: 265503277}
   m_Layer: 5
-  m_Name: Water Wheel Upgrade Button
+  m_Name: Button 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -873,11 +880,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae3465d0719629e4fa1e021269ee4a5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeButton
-  upgradeData: {fileID: 11400000, guid: 1646d64234902924282a10a19d56cc19, type: 2}
   uManager: {fileID: 1894723774}
   planet: {fileID: 0}
+  currentUpgrade:
+    upgradeData: {fileID: 0}
+    upgradeLevel: 0
+    currentCost: 0
+  upgradeName: {fileID: 246901636}
   upgradeCost: {fileID: 1970126782}
-  upgradePrice: 15
 --- !u!114 &265503278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1535,7 +1545,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UIManager
   PlanetUIMenu: {fileID: 689606614}
   planetTarget: {fileID: 0}
-  UpgradeData: {fileID: 0}
+  upgradeButtons:
+  - {fileID: 265503277}
+  - {fileID: 559187042}
   planetName: {fileID: 383144259}
   planetDescription: {fileID: 1909660193}
   energy: {fileID: 1743956168}
@@ -1801,7 +1813,7 @@ GameObject:
   - component: {fileID: 559187041}
   - component: {fileID: 559187042}
   m_Layer: 5
-  m_Name: Farm Upgrade Button
+  m_Name: Button 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1936,11 +1948,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae3465d0719629e4fa1e021269ee4a5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeButton
-  upgradeData: {fileID: 11400000, guid: d84ee5c72597f88448b0e141785ad0e5, type: 2}
   uManager: {fileID: 1894723774}
   planet: {fileID: 0}
+  currentUpgrade:
+    upgradeData: {fileID: 0}
+    upgradeLevel: 0
+    currentCost: 0
+  upgradeName: {fileID: 2057122867}
   upgradeCost: {fileID: 677162599}
-  upgradePrice: 30
 --- !u!1 &601686846
 GameObject:
   m_ObjectHideFlags: 0
@@ -1974,6 +1989,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlanetManager
   planet: {fileID: 11400000, guid: b720c281e87790a4c843c4faf06930e4, type: 2}
+  upgradeTemplate: []
   upgrades: []
   planetDescription: Its hella bright
   baseEnergyProduction: 0
@@ -2182,9 +2198,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlanetManager
   planet: {fileID: 11400000, guid: e0dc974b1552e884297c9101995632f1, type: 2}
-  upgrades:
-  - {fileID: 0}
-  - {fileID: 0}
+  upgradeTemplate:
+  - upgradeData: {fileID: 11400000, guid: d84ee5c72597f88448b0e141785ad0e5, type: 2}
+    upgradeLevel: 0
+    currentCost: 15
+  - upgradeData: {fileID: 11400000, guid: 1646d64234902924282a10a19d56cc19, type: 2}
+    upgradeLevel: 0
+    currentCost: 30
+  upgrades: []
   planetDescription: Its hella green
   baseEnergyProduction: 1
   currentEnergyProduction: 0
@@ -2534,7 +2555,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 30
+  m_Text: number
 --- !u!222 &677162600
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4229,7 +4250,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 15
+  m_Text: number
 --- !u!222 &1970126783
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4388,7 +4409,7 @@ GameObject:
   - component: {fileID: 2057122868}
   - component: {fileID: 2057122867}
   m_Layer: 5
-  m_Name: Farm
+  m_Name: Name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4446,7 +4467,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Farm
+  m_Text: name
 --- !u!222 &2057122868
 CanvasRenderer:
   m_ObjectHideFlags: 0

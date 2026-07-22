@@ -1,34 +1,32 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class UpgradeButton : MonoBehaviour
 {
-    public UpgradeData upgradeData;
     public UpgradeManager uManager;
     public PlanetManager planet;
+    public PlanetUpgrade currentUpgrade;
+    public Text upgradeName;
     public Text upgradeCost;
-    [SerializeField] public float upgradePrice;
+
+    public void SetUpgrade(PlanetUpgrade upgrade)
+    {
+        currentUpgrade = upgrade;
+        UpdateButtonUI(currentUpgrade);
+        Debug.Log($"{upgrade.upgradeData.upgradeName} | Planet Cost: {upgrade.currentCost} | Base Cost: {upgrade.upgradeData.baseCost}");
+    }
+
+    public void UpdateButtonUI(PlanetUpgrade upgrade)
+    {
+        upgradeName.text = upgrade.upgradeData.upgradeName;
+        upgradeCost.text = Mathf.RoundToInt(upgrade.currentCost).ToString();
+    }
     public void PressUpgrade()
     {
-        int upgradeResponse = uManager.Upgrade(upgradeData,this);
-        if (upgradeResponse == 1)
-        {
-            IncreaseUpgradePrice(upgradeData);
-            UpdateEnergyButtonCost(upgradeData);
-        }
+        uManager.Upgrade(currentUpgrade);
 
-    }
-
-    public void UpdateEnergyButtonCost(UpgradeData upgradeData)
-    {
-        upgradeCost.text = Mathf.RoundToInt(upgradePrice).ToString();
-    }
-
-    public void IncreaseUpgradePrice(UpgradeData upgrade)
-    {
-        float upgradeCostMultiplier = 1.35f;
-        upgradePrice = upgradePrice * upgradeCostMultiplier;
-        Debug.Log($"The price of {upgrade.name} has been increased to {upgradePrice}");
+        UpdateButtonUI(currentUpgrade);
     }
 }
