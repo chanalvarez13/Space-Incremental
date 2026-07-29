@@ -10,6 +10,7 @@ public class PlanetManager : MonoBehaviour
     [SerializeField] private List<PlanetUpgrade> upgradeTemplate;
     public List<PlanetUpgrade> upgrades = new List<PlanetUpgrade>();
     public string planetDescription;
+    [SerializeField] public bool planetOwned = true;
     public float baseEnergyProduction = 1;
     public float currentEnergyProduction;
     public float Energy;
