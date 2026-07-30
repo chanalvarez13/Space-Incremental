@@ -750,6 +750,7 @@ MonoBehaviour:
   Population: 0
   energyUpgradesBought: 0
   currentPopulationInflux: 0
+  PlanetOwned: 0
 --- !u!212 &252441434
 SpriteRenderer:
   serializedVersion: 3
@@ -1543,7 +1544,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5b16bcee1cb09c48b16f58b9f4cca4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIManager
-  PlanetUIMenu: {fileID: 689606614}
+  CanvasUIMenu: {fileID: 689606614}
+  PlanetUIMenu: {fileID: 446911685}
+  PlanetUpgradeMenu: {fileID: 378281417}
   planetTarget: {fileID: 0}
   upgradeButtons:
   - {fileID: 265503277}
@@ -1998,6 +2001,7 @@ MonoBehaviour:
   Population: 0
   energyUpgradesBought: 0
   currentPopulationInflux: 0
+  PlanetOwned: 0
 --- !u!212 &601686848
 SpriteRenderer:
   serializedVersion: 3
@@ -2213,6 +2217,7 @@ MonoBehaviour:
   Population: 2
   energyUpgradesBought: 0
   currentPopulationInflux: 0
+  PlanetOwned: 1
 --- !u!212 &609179740
 SpriteRenderer:
   serializedVersion: 3

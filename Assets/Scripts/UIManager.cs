@@ -4,7 +4,9 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
+    public GameObject CanvasUIMenu;
     public GameObject PlanetUIMenu;
+    public GameObject PlanetUpgradeMenu;
     public PlanetManager planetTarget;
     [SerializeField] public UpgradeButton[] upgradeButtons;
     public Text planetName;
@@ -17,10 +19,23 @@ public class UIManager : MonoBehaviour
     public void OnPlanetPress(PlanetManager targetPlanet)
     {
         planetTarget = targetPlanet;
-        if (PlanetUIMenu != null)
+        if (CanvasUIMenu != null)
         {
-            ShowPlanetUpgrades(targetPlanet);
-            PlanetUIMenu.SetActive(!PlanetUIMenu.activeSelf);
+            CanvasUIMenu.SetActive(!CanvasUIMenu.activeSelf);
+            if (PlanetUIMenu != null)
+            {
+                PlanetUIMenu.SetActive(true);
+            }
+
+            if (PlanetUpgradeMenu != null && planetTarget.PlanetOwned == true)
+            {
+                PlanetUpgradeMenu.SetActive(true);
+                ShowPlanetUpgrades(targetPlanet);
+            } else if (PlanetUpgradeMenu != null && planetTarget.PlanetOwned == false)
+            {
+                PlanetUpgradeMenu.SetActive(false);
+                Debug.Log("Planet is not owned.");
+            }
         }
     }
 
