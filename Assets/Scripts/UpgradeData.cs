@@ -7,4 +7,11 @@ public class UpgradeData : ScriptableObject
     public float energyProductionIncrease;
     public float populationIncrease;
     public float baseCost;
+
+    public enum CostType
+    {
+        Energy,
+        Population
+    }
+    public CostType costType;
 }
