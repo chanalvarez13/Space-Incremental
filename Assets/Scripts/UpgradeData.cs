@@ -14,4 +14,5 @@ public class UpgradeData : ScriptableObject
         Population
     }
     public CostType costType;
+    public float costMultiplier;
 }

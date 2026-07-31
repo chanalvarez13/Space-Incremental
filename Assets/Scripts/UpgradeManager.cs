@@ -9,7 +9,6 @@ public class UpgradeManager : MonoBehaviour
     public void SelectPlanet(PlanetManager planet)
     {
         targetPlanet = planet;
-        Debug.Log($"{planet.name} has been selected.");
     }
     public void Upgrade(PlanetUpgrade planetUpgrade)
     {
@@ -37,7 +36,9 @@ public class UpgradeManager : MonoBehaviour
         targetPlanet.currentPopulationInflux += planetUpgrade.upgradeData.populationIncrease;
 
         planetUpgrade.upgradeLevel++;
-        planetUpgrade.currentCost *= (float)1.35;
+        planetUpgrade.currentCost *= planetUpgrade.upgradeData.costMultiplier;
+
+        Debug.Log($"{planetUpgrade.upgradeData.upgradeName} now costs {planetUpgrade.currentCost}");
     }
 
 }

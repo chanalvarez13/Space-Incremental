@@ -41,7 +41,6 @@ public class PlanetManager : MonoBehaviour
         uiManager.OnPlanetPress(this);
         upgradeManager.SelectPlanet(this);
         uiManager.ShowPlanetUpgrades(this);
-        Debug.Log($"{planet.name} has been clicked!");
     }
 
     private List<PlanetUpgrade> CreateUpgrades(List<PlanetUpgrade> template)

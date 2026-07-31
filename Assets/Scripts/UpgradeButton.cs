@@ -15,7 +15,6 @@ public class UpgradeButton : MonoBehaviour
     {
         currentUpgrade = upgrade;
         UpdateButtonUI(currentUpgrade);
-        Debug.Log($"{upgrade.upgradeData.upgradeName} | Planet Cost: {upgrade.currentCost} | Base Cost: {upgrade.upgradeData.baseCost}");
     }
 
     public void UpdateButtonUI(PlanetUpgrade upgrade)
