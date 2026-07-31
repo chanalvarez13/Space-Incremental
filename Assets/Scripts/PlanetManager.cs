@@ -17,6 +17,7 @@ public class PlanetManager : MonoBehaviour
     public float Population;
     public float energyUpgradesBought;
     public float currentPopulationInflux;
+    [SerializeField] public bool PlanetOwned;
 
     void Start()
     {
