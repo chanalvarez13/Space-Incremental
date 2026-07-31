@@ -11,6 +11,7 @@ public class UpgradeButton : MonoBehaviour
     public Text upgradeName;
     public Text upgradeCost;
 
+
     public void SetUpgrade(PlanetUpgrade upgrade)
     {
         currentUpgrade = upgrade;
@@ -19,8 +20,8 @@ public class UpgradeButton : MonoBehaviour
 
     public void UpdateButtonUI(PlanetUpgrade upgrade)
     {
-        upgradeName.text = upgrade.upgradeData.upgradeName;
-        upgradeCost.text = Mathf.RoundToInt(upgrade.currentCost).ToString();
+            upgradeName.text = upgrade.upgradeData.upgradeName;
+            upgradeCost.text = Mathf.RoundToInt(upgrade.currentCost).ToString();
     }
     public void PressUpgrade()
     {

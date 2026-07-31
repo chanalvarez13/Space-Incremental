@@ -1,3 +1,4 @@
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
@@ -47,10 +48,10 @@ public class UIManager : MonoBehaviour
 
     public void ShowPlanetUpgrades(PlanetManager planet)
     {
-        for (int i = 0; i < planet.upgrades.Count; i++)
-        {
-            upgradeButtons[i].SetUpgrade(planet.upgrades[i]);
-        }
+            for (int i = 0; i < planet.upgrades.Count; i++)
+            {
+                upgradeButtons[i].SetUpgrade(planet.upgrades[i]);
+            }
     }
 
     void Start()

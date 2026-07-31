@@ -2824,6 +2824,18 @@ MonoBehaviour:
   - {fileID: 1663861263}
   - {fileID: 1599189321}
   - {fileID: 530103731}
+  upgradeButtonGameObjects:
+  - {fileID: 265503275}
+  - {fileID: 559187037}
+  - {fileID: 31403904}
+  - {fileID: 739555998}
+  - {fileID: 1848312735}
+  - {fileID: 1320099337}
+  - {fileID: 2071794003}
+  - {fileID: 1184011579}
+  - {fileID: 1663861258}
+  - {fileID: 1599189316}
+  - {fileID: 530103726}
   planetName: {fileID: 383144259}
   planetDescription: {fileID: 1909660193}
   energy: {fileID: 1743956168}
