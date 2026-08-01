@@ -3847,6 +3847,27 @@ MonoBehaviour:
   - upgradeData: {fileID: 11400000, guid: cb88a6b6e4cfe2f418b03a6181656a4e, type: 2}
     upgradeLevel: 0
     currentCost: 0
+  - upgradeData: {fileID: 11400000, guid: 0caa02d6017bc2941bf2d987ec9d6251, type: 2}
+    upgradeLevel: 0
+    currentCost: 0
+  - upgradeData: {fileID: 11400000, guid: d9e0a3d90d7bcbc46bc88596eb647f8f, type: 2}
+    upgradeLevel: 0
+    currentCost: 0
+  - upgradeData: {fileID: 11400000, guid: 899b44e8739df0347bb76cd287330a7e, type: 2}
+    upgradeLevel: 0
+    currentCost: 0
+  - upgradeData: {fileID: 11400000, guid: 51f8816f02b2c574ca061bfac0795b76, type: 2}
+    upgradeLevel: 0
+    currentCost: 0
+  - upgradeData: {fileID: 11400000, guid: 1009a6b7fa42796468e90e2d3b1e1e9f, type: 2}
+    upgradeLevel: 0
+    currentCost: 0
+  - upgradeData: {fileID: 11400000, guid: 1101543841225d0438faa42b6e98fbd8, type: 2}
+    upgradeLevel: 0
+    currentCost: 0
+  - upgradeData: {fileID: 11400000, guid: 4f82c9294a7ddad429ba7b38918928d5, type: 2}
+    upgradeLevel: 0
+    currentCost: 0
   upgrades: []
   planetDescription: Its hella green
   baseEnergyProduction: 1

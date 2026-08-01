@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f2f451eccfb83640ba9313eba2f1223, type: 3}
   m_Name: Basic Agriculture
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeData
-  upgradeName: Basic Farm
-  upgradeDescription: 
+  upgradeName: Basic Agriculture
+  upgradeDescription: Basic Agriculture farm
   energyProductionIncrease: 0
   populationIncrease: 1
   baseCost: 15

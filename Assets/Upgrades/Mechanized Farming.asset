@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1f2f451eccfb83640ba9313eba2f1223, type: 3}
-  m_Name: Animal Domestication
+  m_Name: Mechanized Farming
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeData
-  upgradeName: Animal Domestication
+  upgradeName: Mechanized Farming
   upgradeDescription: 
-  energyProductionIncrease: 2
-  populationIncrease: 1
-  baseCost: 50
-  costType: 1
-  costMultiplier: 1.25
+  energyProductionIncrease: 0
+  populationIncrease: 25
+  baseCost: 1000
+  costType: 0
+  costMultiplier: 1.5
