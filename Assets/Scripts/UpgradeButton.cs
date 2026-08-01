@@ -21,7 +21,14 @@ public class UpgradeButton : MonoBehaviour
     public void UpdateButtonUI(PlanetUpgrade upgrade)
     {
             upgradeName.text = upgrade.upgradeData.upgradeName;
-            upgradeCost.text = Mathf.RoundToInt(upgrade.currentCost).ToString();
+        if (upgrade.upgradeData.costType == UpgradeData.CostType.Energy)
+        {
+            upgradeCost.text = Mathf.RoundToInt(upgrade.currentCost).ToString() + " E";
+        } else if (upgrade.upgradeData.costType == UpgradeData.CostType.Population)
+        {
+            upgradeCost.text = Mathf.RoundToInt(upgrade.currentCost).ToString() + " P";
+        }
+
     }
     public void PressUpgrade()
     {
