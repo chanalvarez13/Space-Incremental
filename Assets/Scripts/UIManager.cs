@@ -49,9 +49,17 @@ public class UIManager : MonoBehaviour
 
     public void ShowPlanetUpgrades(PlanetManager planet)
     {
-            for (int i = 0; i < planet.upgrades.Count; i++)
+            for (int i = 0; i < upgradeButtons.Length; i++)
             {
+                if (i < planet.upgrades.Count && planet.upgrades[i].upgradeData != null)
+                {
+                    upgradeButtons[i].gameObject.SetActive(true);
                     upgradeButtons[i].SetUpgrade(planet.upgrades[i]);
+                } else
+                {
+                    upgradeButtons[i].gameObject.SetActive(false);
+                }
+
             }
     }
 
