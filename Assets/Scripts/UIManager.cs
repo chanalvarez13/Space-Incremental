@@ -1,3 +1,5 @@
+using System.Linq;
+using System.Text.Json.Serialization;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,7 +12,7 @@ public class UIManager : MonoBehaviour
     public GameObject PlanetOwnedInformation;
     public GameObject PlanetNotOwned;
     public PlanetManager planetTarget;
-    [SerializeField] public UpgradeButton[] upgradeButtons;
+    [SerializeField] public UpgradeButton[] upgradeButtons; // change this into a List when i get back
     public Text planetName;
     public Text planetDescription;
     public Text energy;
@@ -47,10 +49,10 @@ public class UIManager : MonoBehaviour
 
     public void ShowPlanetUpgrades(PlanetManager planet)
     {
-        for (int i = 0; i < planet.upgrades.Count; i++)
-        {
-            upgradeButtons[i].SetUpgrade(planet.upgrades[i]);
-        }
+            for (int i = 0; i < planet.upgrades.Count; i++)
+            {
+                    upgradeButtons[i].SetUpgrade(planet.upgrades[i]);
+            }
     }
 
     void Start()

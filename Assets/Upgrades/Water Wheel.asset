@@ -16,4 +16,6 @@ MonoBehaviour:
   upgradeDescription: Increases Energy Production
   energyProductionIncrease: 1
   populationIncrease: 0
-  baseCost: 30
+  baseCost: 15
+  costType: 0
+  costMultiplier: 1.25
