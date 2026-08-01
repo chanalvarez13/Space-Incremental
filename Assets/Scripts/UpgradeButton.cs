@@ -23,10 +23,10 @@ public class UpgradeButton : MonoBehaviour
             upgradeName.text = upgrade.upgradeData.upgradeName;
         if (upgrade.upgradeData.costType == UpgradeData.CostType.Energy)
         {
-            upgradeCost.text = Mathf.RoundToInt(upgrade.currentCost).ToString() + " E";
+            upgradeCost.text = NumberFormatter.Format(upgrade.currentCost) + " E";
         } else if (upgrade.upgradeData.costType == UpgradeData.CostType.Population)
         {
-            upgradeCost.text = Mathf.RoundToInt(upgrade.currentCost).ToString() + " P";
+            upgradeCost.text = NumberFormatter.Format(upgrade.currentCost) + " P";
         }
 
     }
