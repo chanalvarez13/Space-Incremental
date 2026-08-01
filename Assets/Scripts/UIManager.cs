@@ -63,11 +63,6 @@ public class UIManager : MonoBehaviour
             }
     }
 
-    void Start()
-    {
-
-    }
-
     public void Update()
     {
         if (planetTarget != null)

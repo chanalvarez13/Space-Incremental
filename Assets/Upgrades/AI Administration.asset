@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f2f451eccfb83640ba9313eba2f1223, type: 3}
+  m_Name: AI Administration
+  m_EditorClassIdentifier: Assembly-CSharp::UpgradeData
+  upgradeName: AI Administration
+  upgradeDescription: 
+  energyProductionIncrease: 50000
+  populationIncrease: 50000
+  baseCost: 1000000
+  costType: 0
+  costMultiplier: 2.5
