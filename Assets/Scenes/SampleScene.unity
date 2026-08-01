@@ -471,7 +471,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Energy Cost:'
+  m_text: 'Cost:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -505,7 +505,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1039,7 +1039,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Energy Cost:'
+  m_text: 'Cost:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1073,7 +1073,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1177,7 +1177,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Energy Cost:'
+  m_text: 'Cost:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1211,7 +1211,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1291,8 +1291,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 32, y: 0}
-  m_SizeDelta: {x: 293.8678, y: 88.771}
+  m_AnchoredPosition: {x: 37, y: -0.005127}
+  m_SizeDelta: {x: 342.3785, y: 88.761}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &246901636
 MonoBehaviour:
@@ -1318,7 +1318,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 50
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 0
     m_MaxSize: 78
     m_Alignment: 3
@@ -1461,13 +1461,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlanetManager
   planet: {fileID: 11400000, guid: 15b66b2488e89c1469d905250198d3e7, type: 2}
-  upgradeTemplate:
-  - upgradeData: {fileID: 11400000, guid: 7c9f49a2e390b054dad7bbc57ca2cb0e, type: 2}
-    upgradeLevel: 0
-    currentCost: 100
-  - upgradeData: {fileID: 11400000, guid: 3170199559b6acf47955f622ec32058e, type: 2}
-    upgradeLevel: 0
-    currentCost: 200
+  upgradeTemplate: []
   upgrades: []
   planetDescription: damn thas far
   baseEnergyProduction: 0
@@ -1822,8 +1816,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 32, y: 0}
-  m_SizeDelta: {x: 293.6819, y: 89.375}
+  m_AnchoredPosition: {x: 35.819, y: -0.15631}
+  m_SizeDelta: {x: 329.13, y: 89.063}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &303356328
 MonoBehaviour:
@@ -1849,7 +1843,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 50
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 5
     m_MaxSize: 78
     m_Alignment: 3
@@ -1925,7 +1919,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Energy Cost:'
+  m_text: 'Cost:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1959,7 +1953,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -2039,8 +2033,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 32, y: 0}
-  m_SizeDelta: {x: 293.6819, y: 89.375}
+  m_AnchoredPosition: {x: 37, y: -0.31241}
+  m_SizeDelta: {x: 338.3415, y: 89.375}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &349561401
 MonoBehaviour:
@@ -2066,7 +2060,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 50
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 5
     m_MaxSize: 78
     m_Alignment: 3
@@ -2824,18 +2818,6 @@ MonoBehaviour:
   - {fileID: 1663861263}
   - {fileID: 1599189321}
   - {fileID: 530103731}
-  upgradeButtonGameObjects:
-  - {fileID: 265503275}
-  - {fileID: 559187037}
-  - {fileID: 31403904}
-  - {fileID: 739555998}
-  - {fileID: 1848312735}
-  - {fileID: 1320099337}
-  - {fileID: 2071794003}
-  - {fileID: 1184011579}
-  - {fileID: 1663861258}
-  - {fileID: 1599189316}
-  - {fileID: 530103726}
   planetName: {fileID: 383144259}
   planetDescription: {fileID: 1909660193}
   energy: {fileID: 1743956168}
@@ -2915,7 +2897,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Energy Cost:'
+  m_text: 'Cost:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2949,7 +2931,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -3859,12 +3841,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlanetManager
   planet: {fileID: 11400000, guid: e0dc974b1552e884297c9101995632f1, type: 2}
   upgradeTemplate:
-  - upgradeData: {fileID: 11400000, guid: d84ee5c72597f88448b0e141785ad0e5, type: 2}
+  - upgradeData: {fileID: 11400000, guid: dde9b019804ed4842a98d7b03b692c30, type: 2}
     upgradeLevel: 0
-    currentCost: 15
-  - upgradeData: {fileID: 11400000, guid: 1646d64234902924282a10a19d56cc19, type: 2}
+    currentCost: 0
+  - upgradeData: {fileID: 11400000, guid: cb88a6b6e4cfe2f418b03a6181656a4e, type: 2}
     upgradeLevel: 0
-    currentCost: 30
+    currentCost: 0
+  - upgradeData: {fileID: 11400000, guid: 0caa02d6017bc2941bf2d987ec9d6251, type: 2}
+    upgradeLevel: 0
+    currentCost: 0
+  - upgradeData: {fileID: 11400000, guid: d9e0a3d90d7bcbc46bc88596eb647f8f, type: 2}
+    upgradeLevel: 0
+    currentCost: 0
+  - upgradeData: {fileID: 11400000, guid: 899b44e8739df0347bb76cd287330a7e, type: 2}
+    upgradeLevel: 0
+    currentCost: 0
+  - upgradeData: {fileID: 11400000, guid: 51f8816f02b2c574ca061bfac0795b76, type: 2}
+    upgradeLevel: 0
+    currentCost: 0
+  - upgradeData: {fileID: 11400000, guid: 1009a6b7fa42796468e90e2d3b1e1e9f, type: 2}
+    upgradeLevel: 0
+    currentCost: 0
+  - upgradeData: {fileID: 11400000, guid: 1101543841225d0438faa42b6e98fbd8, type: 2}
+    upgradeLevel: 0
+    currentCost: 0
+  - upgradeData: {fileID: 11400000, guid: 4f82c9294a7ddad429ba7b38918928d5, type: 2}
+    upgradeLevel: 0
+    currentCost: 0
   upgrades: []
   planetDescription: Its hella green
   baseEnergyProduction: 1
@@ -5066,8 +5069,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 32, y: 0}
-  m_SizeDelta: {x: 293.6819, y: 89.375}
+  m_AnchoredPosition: {x: 37, y: 0.15625}
+  m_SizeDelta: {x: 337.3416, y: 89.688}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &853596259
 MonoBehaviour:
@@ -5093,7 +5096,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 50
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 5
     m_MaxSize: 78
     m_Alignment: 3
@@ -6220,8 +6223,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 32, y: 0}
-  m_SizeDelta: {x: 293.6819, y: 89.375}
+  m_AnchoredPosition: {x: 37, y: -0.31244}
+  m_SizeDelta: {x: 347.0437, y: 89.375}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1158021486
 MonoBehaviour:
@@ -6247,7 +6250,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 50
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 5
     m_MaxSize: 78
     m_Alignment: 3
@@ -6809,7 +6812,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 32, y: 0}
+  m_AnchoredPosition: {x: 31.254, y: -0.3125}
   m_SizeDelta: {x: 293.6819, y: 89.375}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1241523637
@@ -6836,7 +6839,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 50
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 5
     m_MaxSize: 78
     m_Alignment: 3
@@ -6912,7 +6915,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Energy Cost:'
+  m_text: 'Cost:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6946,7 +6949,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -7026,8 +7029,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 32, y: 0}
-  m_SizeDelta: {x: 293.6819, y: 89.375}
+  m_AnchoredPosition: {x: 37, y: 0.1563}
+  m_SizeDelta: {x: 338.9588, y: 89.688}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1269799521
 MonoBehaviour:
@@ -7053,11 +7056,11 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 50
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 5
     m_MaxSize: 78
     m_Alignment: 3
-    m_AlignByGeometry: 0
+    m_AlignByGeometry: 1
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
@@ -7362,7 +7365,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Energy Cost:'
+  m_text: 'Cost:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7396,7 +7399,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -7714,7 +7717,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Energy Cost:'
+  m_text: 'Cost:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7748,7 +7751,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -8010,7 +8013,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Energy Cost:'
+  m_text: 'Cost:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8044,7 +8047,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -8124,8 +8127,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 32, y: 0}
-  m_SizeDelta: {x: 293.6819, y: 89.375}
+  m_AnchoredPosition: {x: 35.819, y: -0.15628}
+  m_SizeDelta: {x: 329.13, y: 89.063}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1585840058
 MonoBehaviour:
@@ -8151,7 +8154,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 50
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 5
     m_MaxSize: 78
     m_Alignment: 3
@@ -8539,7 +8542,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Energy Cost:'
+  m_text: 'Cost:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8573,7 +8576,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -8834,7 +8837,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Energy Cost:'
+  m_text: 'Cost:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8868,7 +8871,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -9340,8 +9343,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 32, y: 0}
-  m_SizeDelta: {x: 293.6819, y: 89.375}
+  m_AnchoredPosition: {x: 37, y: 0.31256}
+  m_SizeDelta: {x: 343.8098, y: 89.375}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1779096543
 MonoBehaviour:
@@ -9367,7 +9370,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 50
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 5
     m_MaxSize: 78
     m_Alignment: 3
@@ -9929,8 +9932,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 32, y: 0}
-  m_SizeDelta: {x: 293.6819, y: 89.375}
+  m_AnchoredPosition: {x: 37, y: 0.15625}
+  m_SizeDelta: {x: 340.5754, y: 89.688}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1866451148
 MonoBehaviour:
@@ -9956,7 +9959,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 50
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 5
     m_MaxSize: 78
     m_Alignment: 3
@@ -10956,8 +10959,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 32, y: 0}
-  m_SizeDelta: {x: 293.6819, y: 89.375}
+  m_AnchoredPosition: {x: 38.76, y: -0.15637}
+  m_SizeDelta: {x: 358.55, y: 89.063}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2057122867
 MonoBehaviour:
@@ -10983,7 +10986,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 50
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 5
     m_MaxSize: 78
     m_Alignment: 3

@@ -49,9 +49,17 @@ public class UIManager : MonoBehaviour
 
     public void ShowPlanetUpgrades(PlanetManager planet)
     {
-            for (int i = 0; i < planet.upgrades.Count; i++)
+            for (int i = 0; i < upgradeButtons.Length; i++)
             {
+                if (i < planet.upgrades.Count && planet.upgrades[i].upgradeData != null)
+                {
+                    upgradeButtons[i].gameObject.SetActive(true);
                     upgradeButtons[i].SetUpgrade(planet.upgrades[i]);
+                } else
+                {
+                    upgradeButtons[i].gameObject.SetActive(false);
+                }
+
             }
     }
 
@@ -68,8 +76,8 @@ public class UIManager : MonoBehaviour
             planetDescription.text = planetTarget.planetDescription;
             currentEnergyProduction.text = planetTarget.currentEnergyProduction.ToString() + "/s";
             populationIncrease.text = planetTarget.currentPopulationInflux.ToString() + "/s";
-            energy.text = Mathf.RoundToInt(planetTarget.Energy) + " Energy";
-            population.text = Mathf.RoundToInt(planetTarget.Population) + " Population";
+            energy.text = Mathf.RoundToInt(planetTarget.Energy).ToString();
+            population.text = Mathf.RoundToInt(planetTarget.Population).ToString();
         }
     }
 }

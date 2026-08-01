@@ -10,10 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1f2f451eccfb83640ba9313eba2f1223, type: 3}
-  m_Name: Solar Planel
+  m_Name: Steam Engine
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeData
-  upgradeName: Solar Panel
-  upgradeDescription: they collect SUN
-  energyProductionIncrease: 15
+  upgradeName: Steam Engine
+  upgradeDescription: creates energy from steam
+  energyProductionIncrease: 25
   populationIncrease: 0
-  baseCost: 100
+  baseCost: 1000
+  costType: 1
+  costMultiplier: 1.5
