@@ -12,7 +12,7 @@ public class UIManager : MonoBehaviour
     public GameObject PlanetOwnedInformation;
     public GameObject PlanetNotOwned;
     public PlanetManager planetTarget;
-    [SerializeField] public UpgradeButton[] upgradeButtons; // change this into a List when i get back
+    [SerializeField] public UpgradeButton[] upgradeButtons;
     public Text planetName;
     public Text planetDescription;
     public Text energy;
