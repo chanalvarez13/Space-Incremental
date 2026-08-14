@@ -7,6 +7,7 @@ public class PlanetManager : MonoBehaviour
     [SerializeField] private PlanetData planet;
     private UIManager uiManager;
     private UpgradeManager upgradeManager;
+    private GameManager gameManager;
     [SerializeField] private List<PlanetUpgrade> upgradeTemplate;
     public List<PlanetUpgrade> upgrades = new List<PlanetUpgrade>();
     public string planetDescription;
@@ -23,6 +24,8 @@ public class PlanetManager : MonoBehaviour
     {
         uiManager = FindAnyObjectByType<UIManager>();
         upgradeManager = FindAnyObjectByType<UpgradeManager>();
+        gameManager = FindAnyObjectByType<GameManager>();
+
 
         upgrades = CreateUpgrades(upgradeTemplate);
         AddProduction();

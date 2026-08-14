@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f2f451eccfb83640ba9313eba2f1223, type: 3}
   m_Name: Sacrifice
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeData
-  upgradeName: 
-  upgradeDescription: 
+  upgradeName: Sacrifice
+  upgradeDescription: Blood Sacrifice
   energyProductionIncrease: 0
   populationIncrease: 0
-  baseCost: 0
-  costType: 0
-  costMultiplier: 0
+  baseCost: 1000000
+  costType: 2
+  costMultiplier: 1.5
